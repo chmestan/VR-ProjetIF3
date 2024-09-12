@@ -11,14 +11,14 @@ public class BodyCollision : MonoBehaviour
 
     void Update()
     {
+        
     }
 
     void OnTriggerStay(Collider other)
     {
         if (gameObject.tag == "controllerR" && other.CompareTag("controllerRTrigger")) goodPlacementCR = true;
         if (gameObject.tag == "controllerL" && other.CompareTag("controllerLTrigger")) goodPlacementCL = true;
-        if (gameObject.tag == "head" && other.CompareTag("headTrigger")) goodPlacementH = true;
-        
+        if (gameObject.tag == "head" && other.CompareTag("headTrigger")) goodPlacementH = true; 
     }
 
 

@@ -35,7 +35,7 @@ public class PlayerHit : MonoBehaviour
         goodCL = collisionCL.goodPlacementCL;
         goodH = collisionH.goodPlacementH;
 
-        Debug.Log(currentLives);
+        Debug.Log(currentLives/3);
     }
 
     public void CheckDamage()
@@ -47,9 +47,9 @@ public class PlayerHit : MonoBehaviour
         {
             currentLives --;
         }
-        goodCR = false;
-        goodCL = false;
-        goodH = false;
+        // collisionCR.goodPlacementCR = false;
+        // collisionCL.goodPlacementCL = false;
+        // collisionH.goodPlacementH = false;
     }
 
 }

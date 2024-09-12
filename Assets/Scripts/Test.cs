@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Vector3 localisation ;  
+    [SerializeField] float speed = 1f; 
+    void OnEnable()
     {
-        
+        transform.position = localisation;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.back  * speed * Time.deltaTime);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.gameObject);
+    }
+
 }

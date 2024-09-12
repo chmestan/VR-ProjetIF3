@@ -15,9 +15,5 @@ public class Test : MonoBehaviour
         transform.Translate(Vector3.up  * speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log(other.gameObject);
-    }
 
 }

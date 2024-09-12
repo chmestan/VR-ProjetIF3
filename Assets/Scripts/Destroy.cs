@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    public GameObject destroyObject;
     float destroyTime = 7f;
 
     void Update()
     {
-        if (destroyObject != null && destroyTime >= 7)
+        if (gameObject != null && destroyTime >= 7)
         {
-            Destroy(destroyObject,destroyTime);
+            Destroy(gameObject,destroyTime);
             destroyTime = 0f;
         }
     }

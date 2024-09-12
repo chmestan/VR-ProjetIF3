@@ -8,6 +8,9 @@ TagManager:
   - controllerR
   - controllerL
   - head
+  - controllerRTrigger
+  - controllerLTrigger
+  - headTrigger
   layers:
   - Default
   - TransparentFX

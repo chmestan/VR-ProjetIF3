@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 426518852}
   m_Layer: 0
   m_Name: GameObject L
-  m_TagString: controllerL
+  m_TagString: controllerLTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +149,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.596, y: 0, z: 0.25}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.82}
+  m_LocalScale: {x: 0.45000002, y: 0.45000002, z: 0.45}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 512804804}
@@ -258,9 +258,10 @@ GameObject:
   - component: {fileID: 486017604}
   - component: {fileID: 486017603}
   - component: {fileID: 486017602}
+  - component: {fileID: 486017605}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 486017600}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.856, z: 0}
+  m_LocalPosition: {x: -0.009, y: 0.84, z: 0}
   m_LocalScale: {x: 0.31, y: 0.31, z: 0.31}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -351,6 +352,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486017600}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &486017605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486017600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40223e807eceefe42b61cf1b5af32d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodPlacementCR: 0
+  goodPlacementCL: 0
+  goodPlacementH: 0
 --- !u!1 &512804800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a4c7efdae66c604ab5514de6769b130, type: 3}
@@ -438,7 +454,7 @@ GameObject:
   - component: {fileID: 957214558}
   m_Layer: 0
   m_Name: Controller R
-  m_TagString: Untagged
+  m_TagString: controllerR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -452,7 +468,7 @@ Transform:
   m_GameObject: {fileID: 957214553}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.926, y: 0.392, z: 0}
+  m_LocalPosition: {x: 0.905, y: 0.403, z: 0}
   m_LocalScale: {x: 0.32, y: 0.32, z: 0.32}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -541,6 +557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40223e807eceefe42b61cf1b5af32d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodPlacementCR: 0
+  goodPlacementCL: 0
+  goodPlacementH: 0
 --- !u!1001 &1372295854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -648,7 +667,7 @@ GameObject:
   - component: {fileID: 1579891887}
   m_Layer: 0
   m_Name: Head
-  m_TagString: head
+  m_TagString: headTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -663,8 +682,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.004, y: 0, z: 0.534}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.82}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 512804804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -703,7 +722,7 @@ GameObject:
   - component: {fileID: 1617367511}
   m_Layer: 0
   m_Name: GameObject R
-  m_TagString: controllerR
+  m_TagString: controllerRTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,8 +737,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.605, y: 0, z: 0.25}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.82}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 512804804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -758,9 +777,10 @@ GameObject:
   - component: {fileID: 1652783271}
   - component: {fileID: 1652783270}
   - component: {fileID: 1652783269}
+  - component: {fileID: 1652783272}
   m_Layer: 0
   m_Name: Controller L
-  m_TagString: Untagged
+  m_TagString: controllerL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -774,7 +794,7 @@ Transform:
   m_GameObject: {fileID: 1652783267}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.86, y: 0.392, z: 0}
+  m_LocalPosition: {x: -0.871, y: 0.405, z: 0}
   m_LocalScale: {x: 0.32, y: 0.32, z: 0.32}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -851,6 +871,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652783267}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1652783272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652783267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40223e807eceefe42b61cf1b5af32d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodPlacementCR: 0
+  goodPlacementCL: 0
+  goodPlacementH: 0
 --- !u!1 &1935260230
 GameObject:
   m_ObjectHideFlags: 0

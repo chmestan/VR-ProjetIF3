@@ -12,7 +12,7 @@ public class Test : MonoBehaviour
     }
     void Update()
     {
-        transform.Translate(Vector3.back  * speed * Time.deltaTime);
+        transform.Translate(Vector3.down  * speed * Time.deltaTime);
     }
 
     void OnTriggerEnter(Collider other)

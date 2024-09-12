@@ -17,23 +17,20 @@ public class BodyCollision : MonoBehaviour
         hit = player.GetComponent<PlayerHit>();
     }
 
-    // void OnTriggerEnter(Collider other)
-    // {
-    //     if (other.CompareTag("wall")) 
-    //     {
-    //     goodPlacementCR = false;
-    //     goodPlacementCL = false;
-    //     goodPlacementH = false;
-    //     }
-    // }
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("wall")) 
         {
-            if (gameObject.tag == "controllerR" && other.CompareTag("controllerRTrigger")) goodPlacementCR = true;
-            if (gameObject.tag == "controllerL" && other.CompareTag("controllerLTrigger")) goodPlacementCL = true;
-            if (gameObject.tag == "head" && other.CompareTag("headTrigger")) goodPlacementH = true; 
+        goodPlacementCR = false;
+        goodPlacementCL = false;
+        goodPlacementH = false;
         }
+    }
+    void OnTriggerStay(Collider other)
+    {
+        if (gameObject.CompareTag("controllerR") && other.CompareTag("controllerRTrigger")) goodPlacementCR = true;
+        if (gameObject.CompareTag("controllerL") && other.CompareTag("controllerLTrigger")) goodPlacementCL = true;
+        if (gameObject.CompareTag("head") && other.CompareTag("headTrigger")) goodPlacementH = true; 
     }
 
     void OnTriggerExit(Collider other)

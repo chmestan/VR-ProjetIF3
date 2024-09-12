@@ -8,7 +8,6 @@ public class MoveForward : MonoBehaviour
     [SerializeField] Vector3 localisation;
     [SerializeField] Vector3 rotating;
     [SerializeField] float speed = 1f;
-    public GameObject objectToSpawn;
     void OnEnable()
     {
         transform.position = localisation;
